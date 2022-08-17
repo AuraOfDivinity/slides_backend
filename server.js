@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
     res.send('Slides Backend running successfully!')
 });
 
+require('./routes/index.js')(app)
 
 app.listen(process.env.PORT, ()=> {
     console.log(`Server running on port ${process.env.PORT} successfully.`)
