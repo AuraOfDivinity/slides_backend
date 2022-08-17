@@ -8,7 +8,7 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.STRING
       },
       image_url: {
-        type: Sequelize.FLOAT
+        type: Sequelize.STRING
       },
     });
   
