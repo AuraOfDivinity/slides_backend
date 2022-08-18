@@ -10,6 +10,7 @@ const upload_image_to_bucket = async(blob, key) => {
     Bucket: process.env.AWS_S3_BUCKET_NAME,
     Key: key,
     Body: blob,
+    ContentType: 'image/png'
   }).promise()
 
   return uploaded_image
